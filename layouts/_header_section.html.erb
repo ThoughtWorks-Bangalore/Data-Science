@@ -2,7 +2,7 @@
     <div class="fixed">
         <nav class="top-bar">
             <ul class="title-area">
-                <li class="name"><h1><a href="./">Yottabyte X &raquo; <span><%= start_date(latest).strftime("%b %-d") %></span></a></h1></li>
+                <li class="name"><h1><a href="./">Data Science Discussions &raquo; <span><%= start_date(latest).strftime("%b %-d") %></span></a></h1></li>
                 <li class="toggle-topbar menu-icon"><a href="#"></a></li>
             </ul>
             <section class="top-bar-section">
@@ -14,10 +14,7 @@
                 <ul class="right">
                     <li>
                     <% if latest[:participate] %>
-                        <a href="<%= latest[:participate] %>" target="_blank" rel="nofollow"
-                           onclick="ga('send', 'event', 'participate', 'participate')">
-                            Participate
-                        </a>
+                        <a href="#participate">Participate</a>
                     <% end %>
                     </li>
                     <li>
@@ -30,10 +27,7 @@
                     </li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#agenda">Agenda</a></li>
-                    <% if @item == latest %>
-                        <li><a href="#location">Location</a></li>
-                    <% end %>
-                    <li><a href="#archive">All Editions</a></li>
+                    <li><a href="#location">Location</a></li>
                 </ul>
             </section>
         </nav>

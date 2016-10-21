@@ -1,5 +1,9 @@
 <section id="about" class="feature">
-    <h4 style="text-align: center">YOTTABYTE X</h4>
+    <br/>
+        <% if @item[:subheader] %>
+            <h4 style="text-align: center"><%= @item[:subheader] %></h4>
+        <% end %>
+    <br/>
     <br/>
     <div class="row">
         <div class="large-12 columns" data-anchor-target="#_about">
