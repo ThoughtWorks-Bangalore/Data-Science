@@ -26,10 +26,11 @@
                 <% if agenda[:speaker] %>
                     <p><small>By:
                     <% if agenda[:profile] %>
-                    <a href="<%= agenda[:profile] %>" rel="nofollow" target="_blank"><%= agenda[:speaker] %></a>
+                    <a href="<%= agenda[:profile] %>" rel="nofollow" target="_blank" class="links"><%= agenda[:speaker] %></a>
                     <% else %>
                         <%= agenda[:speaker] %>
                     <% end %>
+                    from <a href="<%= agenda[:org_url]%>" rel="nofollow" target="_blank" class="links"><%= agenda[:org]%></a>
                     </small></p>
                 <% end %>
                 <% if agenda[:speaker_profile] %>
