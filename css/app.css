@@ -3861,6 +3861,10 @@ button, .button {
         border-radius: 50%; }
       #agenda .timings .row .summary a {
         white-space: nowrap; }
+      #agenda .timings .row .summary .links {
+        color: cyan; }
+        #agenda .timings .row .summary .links:hover {
+          color: #00cccc; }
     @media only screen and (min-width: 768px) {
       #agenda .timings .row p {
         margin-bottom: 0; }
